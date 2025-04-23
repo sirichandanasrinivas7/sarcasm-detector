@@ -25,7 +25,7 @@ Whether you're decoding passive-aggressive tweets or just testing out your tone,
 
 ###1. Clone the repo
 
-git clone https://github.com/yourusername/sarcasm-detector.git
+git clone [https://github.com/yourusername/sarcasm-detector.git]
 cd sarcasm-detector
 ###2. Install the dependencies
 pip install -r requirements.txt
@@ -33,3 +33,17 @@ pip install -r requirements.txt
 ###3. Run it with Streamlit
 streamlit run sarcasm.py
 Make sure all the model/tokenizer files are in the same directory as sarcasm.py.
+
+🧾 Project Files:
+File	                    Description
+sarcasm.py	              Main Streamlit app
+tf_model.h5	              Trained model weights
+config.json	              DistilBERT config
+tokenizer_config.json, 
+tokenizer.json,           Tokenizer files
+vocab.txt.
+requirements.txt	        Python dependencies
+
+## Model File
+You can download the trained model from [https://drive.google.com/file/d/1GR5nyfdj2FADRfkNteMXGUFpamUJ82ft/view?usp=sharing]
+
