@@ -1,6 +1,13 @@
 import streamlit as st
 import tensorflow as tf
 from transformers import DistilBertTokenizerFast, TFDistilBertForSequenceClassification
+import gdown
+import os
+
+# Download tf_model.h5 if not already present
+if not os.path.exists("tf_model.h5"):
+    url = "https://drive.google.com/uc?id=1GR5nyfdj2FADRfkNteMXGUFpamUJ82ft"
+    gdown.download(url, "tf_model.h5", quiet=False)
 
 # 1. Load tokenizer properly
 tokenizer = DistilBertTokenizerFast.from_pretrained("./")
